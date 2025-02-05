@@ -1,0 +1,8 @@
+# A _CoqProject file is a cross-IDE and build-system file which describes how
+# the files in your Coq project are laid out.
+
+# "-Q" sets how to map files and folders into a namespace
+-Q src heaplang_lazy_list_based_set
+
+# Lines which are file and folder names are included in the project
+src/

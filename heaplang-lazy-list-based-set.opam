@@ -1,0 +1,14 @@
+opam-version: "2.0"
+maintainer: "Daniel Nezamabadi <dnezamabadi@ethz.ch>"
+authors: "Daniel Nezamabadi"
+dev-repo: "git+https://gitlab.inf.ethz.ch/ou-plf/heaplang-lazy-list-based-set.git"
+
+synopsis: "Iris formalization of a lazy concurrent list-based set algorithm (Heller et al.) in HeapLang"
+
+depends: [
+  "coq-iris-heap-lang" { (= "dev.2024-12-06.1.72e683c9") | (= "dev") }
+]
+
+build: [make "-j%{jobs}%"]
+install: [make "install"]
+
